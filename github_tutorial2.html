@@ -43,70 +43,44 @@
 
   $ git commit -m "I added a description about using github."
 
-  $ git status
-
   $ git push
 
-  ################ Output ########################
-  Sumi Han@DESKTOP-HBM591Q MINGW64 ~
-$ cd desktop
+# Add new files
+  $ git add -A
 
+  ################ Output ########################
+ Sumi Han@DESKTOP-HBM591Q MINGW64 ~
+$ cd desktop
 Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop
 $ cd git_Sumi
-
 Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi
-$ git status
-fatal: Not a git repository (or any of the parent directories): .git
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi
-$ status
-bash: status: command not found
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi
-$ git add github tutorial.html
-fatal: Not a git repository (or any of the parent directories): .git
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi
-$ cd python_basic
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/python_basic (master)
-$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-        github_tutorial.html
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/python_basic (master)
-$ git add github_tutorial.html
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/python_basic (master)
-$ git commit -m "I added a description about using github."
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: empty ident name (for <(null)>) not allowed
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/python_basic (master)
+$ cd Python_basic
+Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/Python_basic (master)
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-        new file:   github_tutorial.html
-
-
-Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/python_basic (master)
+(use "git reset HEAD <file>..." to unstage)
+new file: github_tutorial.html
+new file: github_tutorial2.html
+Changes not staged for commit:
+(use "git add/rm <file>..." to update what will be committed)
+(use "git checkout -- <file>..." to discard changes in working directory)
+deleted: github_tutorial.html
+Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/Python_basic (master)
+$ git commit -m "More description about using github"
+[master 44855e9] More description about using github
+2 files changed, 224 insertions(+)
+create mode 100644 github_tutorial.html
+create mode 100644 github_tutorial2.html
+Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/Python_basic (master)
 $ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.12 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SumiHan/Python_basic
+8e17508..44855e9 master -> master
+Sumi Han@DESKTOP-HBM591Q MINGW64 ~/desktop/git_Sumi/Python_basic (master)
+$
